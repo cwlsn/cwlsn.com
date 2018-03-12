@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Tests are not valued at this time.\" && exit 1",
     "dev": "parcel ./src/index.html --open",
-    "build": "parcel build ./src/index.html --out-dir public"
+    "build": "parcel build ./src/index.html --out-dir public --public-url ./",
+    "site": "git pull && npm install && npm run build"
   },
   "repository": {
     "type": "git",
