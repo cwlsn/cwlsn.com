@@ -2,19 +2,31 @@
   "name": "cwlsn.com",
   "version": "1.0.0",
   "description": "Repo for my personal website",
-  "main": "index.js",
+  "main": "./public/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Tests are not valued at this time.\" && exit 1",
+    "dev": "parcel ./src/index.html --open",
+    "build": "parcel build ./src/index.html --out-dir public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cwlsn/cwlsn.com.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Connor Wilson <me@cwlsn.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cwlsn/cwlsn.com/issues"
   },
-  "homepage": "https://cwlsn.com"
+  "homepage": "https://cwlsn.com",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.6.2"
+  }
 }
