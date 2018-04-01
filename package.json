@@ -4,7 +4,7 @@
   "description": "Repo for my personal website",
   "main": "./public/app.js",
   "scripts": {
-    "test": "echo \"Tests are not valued at this time.\" && exit 1",
+    "test": "xo && echo \"Tests are not valued at this time.\" && exit 1",
     "dev": "parcel ./src/index.html --open",
     "build": "parcel build ./src/index.html --out-dir public --public-url ./",
     "site": "git pull && npm install && npm run build"
@@ -20,6 +20,18 @@
     "url": "https://github.com/cwlsn/cwlsn.com/issues"
   },
   "homepage": "https://cwlsn.com",
+  "xo": {
+    "globals": [
+      "document"
+    ],
+    "semicolon": false,
+    "rules": {
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ]
+    }
+  },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

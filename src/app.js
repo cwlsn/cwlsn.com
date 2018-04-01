@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { render } from 'react-dom'
 import { injectGlobal } from 'styled-components'
 

@@ -1,0 +1,13 @@
+// Normalize
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css);
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i);
+
+// Font Stack
+$font-family: 'Crimson Text', Georgia, serif;
+
+body {
+	font-family: $font-family;
+	color: rgba(255,255,255,.9);
+	background: #2c2e36;
+}
