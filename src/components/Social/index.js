@@ -41,6 +41,11 @@ const Item = styled.div`
 	&:last-child {
 		margin-right: 20px;
 	}
+
+	@media (max-width: 630px) {
+		margin: 0 20px 20px 20px;
+		width: auto;
+	}
 `
 
 const SocialName = styled.a`
@@ -65,6 +70,10 @@ const Email = styled.code`
 const FlexRow = styled.div`
 	display: flex;
 	margin: 20px 0 0 0;
+
+	@media (max-width: 630px) {
+		flex-flow: column;
+	}
 `
 
 const twitterIcon = `<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
