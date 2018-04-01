@@ -1,23 +1,29 @@
 import React, { Fragment } from 'react'
 import { render } from 'react-dom'
+import { injectGlobal } from 'styled-components'
 
-// Import styles
-import './assets/style.scss'
+import Container from './components/Container'
+import Header from './components/Header'
+import Currently from './components/Currently'
+import Social from './components/Social'
 
-const root = document.getElementById('root')
+injectGlobal`
+	body {
+		margin: 0;
+		font-family: 'Enriqueta', serif;
+		background: #353e4c;
+		color: rgba(255,255,255,.95);
+	}
+`
 
 const App = (
-	<Fragment>
-		<header>
-			<h1>hi hello react</h1>
-		</header>
-		<section>
-			fun section
-		</section>
-		<footer>
-			<p>feet are weird</p>
-		</footer>
-	</Fragment>
+	<Container>
+		<Header />
+		<Currently />
+		<Social />
+	</Container>
 )
+
+const root = document.getElementById('root')
 
 render(App, root)
