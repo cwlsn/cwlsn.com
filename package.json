@@ -8,7 +8,7 @@
     "test:coverage": "jest --coverage",
     "dev": "parcel ./src/index.html --open",
     "build": "parcel build ./src/index.html --out-dir public --public-url ./",
-    "site": "git reset --hard && git checkout master && git pull && npm install && npm run build"
+    "site": "git reset --hard && git checkout master && git pull && npm install && npm run test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,15 +22,15 @@
   },
   "homepage": "https://cwlsn.com",
   "jest": {
-		"moduleNameMapper": {
-			"\\.(jpg|jpeg|png|gif|svg|)$": "<rootDir>/src/test/fileMock.js"
-		},
-		"collectCoverageFrom": [
-	    "src/components/**/*.{js}",
-	    "!**/node_modules/**",
-	    "!**/vendor/**"
-	  ]
-	},
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|svg|)$": "<rootDir>/src/test/fileMock.js"
+    },
+    "collectCoverageFrom": [
+      "src/components/**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ]
+  },
   "xo": {
     "globals": [
       "document"
