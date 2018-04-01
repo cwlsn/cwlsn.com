@@ -83,7 +83,7 @@ const Social = () => (
 		<FlexRow>
 			<Item>
 				<Icon icon="linkedin" />
-				<SocialName href="https://www.linkedin.com/in/connor-wilson-1180a5104/">connor-wilson-1180a5104</SocialName>
+				<SocialName href="https://www.linkedin.com/in/cwlsn/">cwlsn</SocialName>
 			</Item>
 			<Item>
 				<Icon icon="twitter" />
