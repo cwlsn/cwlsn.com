@@ -6,6 +6,7 @@ import Container from './components/Container'
 import Header from './components/Header'
 import Currently from './components/Currently'
 import Social from './components/Social'
+import RepoLink from './components/RepoLink'
 
 injectGlobal`
 	body {
@@ -21,6 +22,7 @@ const App = (
 		<Header />
 		<Currently />
 		<Social />
+		<RepoLink />
 	</Container>
 )
 
