@@ -10,3 +10,11 @@ test('RepoLink', () => {
 	expect(tree)
 		.toMatchSnapshot()
 })
+
+test('RepoLink renders without death', () => {
+	const tree = renderer
+		.create(<RepoLink />)
+		.root
+
+	expect(tree.findAllByType(RepoLink)).toHaveLength(1)
+})

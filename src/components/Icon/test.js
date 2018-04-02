@@ -10,3 +10,12 @@ test('Icon', () => {
 	expect(tree)
 		.toMatchSnapshot()
 })
+
+test('Icon renders without death', () => {
+	const tree = renderer
+		.create(<Icon icon="github" />)
+		.root
+
+	expect(tree.findAllByType(Icon)).toHaveLength(1)
+})
+

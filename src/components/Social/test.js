@@ -10,3 +10,11 @@ test('Social', () => {
 	expect(tree)
 		.toMatchSnapshot()
 })
+
+test('Social renders without death', () => {
+	const tree = renderer
+		.create(<Social />)
+		.root
+
+	expect(tree.findAllByType(Social)).toHaveLength(1)
+})

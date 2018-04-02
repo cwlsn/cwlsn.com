@@ -10,3 +10,11 @@ test('Header', () => {
 	expect(tree)
 		.toMatchSnapshot()
 })
+
+test('Header renders without death', () => {
+	const tree = renderer
+		.create(<Header />)
+		.root
+
+	expect(tree.findAllByType(Header)).toHaveLength(1)
+})
