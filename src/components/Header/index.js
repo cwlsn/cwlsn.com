@@ -15,8 +15,8 @@ const StyledFace = styled.img`
 	height: 72px;
 	display: block;
 	border-radius: 72px;
-	border: 6px solid #353e4c;
 	margin: -59px auto 0;
+	box-shadow: 0px 0px 6px rgba(0,0,0,.5)
 `
 
 const Copy = styled.p`

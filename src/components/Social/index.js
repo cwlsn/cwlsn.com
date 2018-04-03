@@ -10,7 +10,7 @@ const Wrapper = styled.section`
 `
 
 const StyledHeading = styled.h4`
-	background: #353e4c;
+	background: rgba(0,0,0,0.2);
 	border-radius: 0 0 8px 0;
 	padding: 10px 15px;
 	display: inline-block;
@@ -29,7 +29,7 @@ const Item = styled.div`
 	flex-flow: column;
 	padding: 20px;
 	border-radius: 8px;
-	background: #353e4c;
+	background: rgba(255,255,255,.1);
 	box-sizing: border-box;
 	width: 33%;
 	margin: 0 0 20px 20px;
@@ -58,7 +58,7 @@ const SocialName = styled.a`
 
 const Email = styled.code`
 	border-radius: 8px;
-	background: rgba(255,255,255,.2);
+	background: rgba(255,255,255,.1);
 	white-space: nowrap;
 	padding: 3px 8px;
 `
