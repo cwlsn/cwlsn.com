@@ -10,21 +10,12 @@ import RepoLink from './components/RepoLink'
 
 import styles from './config/styles'
 
-const getKeyframe = (color, index, array) => `${Math.floor((index / (array.length - 1)) * 100)}% {
-	background: ${color};
-}`
-
-const spectrumTime = `${styles.background.length * styles.backgroundDuration}s`
-const spectrum = keyframes`
-	${styles.background.map((color, index, original) => getKeyframe(color, index, original))}
-`
-
 injectGlobal`
 	body {
 		margin: 0;
-		font-family: ${styles.fontFamily};
-		color: rgba(255,255,255,.95);
-		animation: ${spectrum} ${spectrumTime} linear infinite alternate;
+		color: #333;
+		font-family: ${styles.fonts.copy};
+		background: #ecf0f1;
 	}
 `
 

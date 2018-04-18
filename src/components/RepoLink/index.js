@@ -6,7 +6,7 @@ const Wrapper = styled.footer`
 	text-align: center;
 	margin: 0 20px 40px;
 	font-size: 18px;
-	color: rgba(255,255,255,0.3);
+	color: #999;
 `
 
 const Copy = styled.p`
@@ -17,13 +17,13 @@ const Copy = styled.p`
 	margin-bottom: 20px;
 
 	& > span {
-		color: #c0ff93;
+		color: #df8f27;
 		margin-right: 6px;
 	}
 `
 
 const Attr = styled.a`
-	color: #c0ff93;
+	color: #df8f27;
 `
 
 const RepoLink = () => (

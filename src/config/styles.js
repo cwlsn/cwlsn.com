@@ -1,11 +1,9 @@
 const styles = {
-	background: [
-		'#353e4c',
-		'#354c3a',
-		'#4c3535',
-	],
-	backgroundDuration: 7,
-	fontFamily: `'Enriqueta', serif`,
+	fonts: {
+		copy: `'Vollkorn', serif`,
+		headings: `'Oswald', sans-serif`,
+		mono: `'Fira Mono', Courier`,
+	},
 }
 
 export default styles

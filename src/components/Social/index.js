@@ -2,24 +2,34 @@ import React from 'react'
 import styled from 'styled-components'
 import Icon from '../Icon'
 
-const Wrapper = styled.section`
-	background: rgba(0,0,0,.2);
-	padding: 0;
-	margin: 40px 20px 40px;
-	border-radius: 8px;
+import styles from '../../config/styles'
+
+const Wrapper = styled.header`
+	background: #fff;
+	padding: 20px 20px 10px;
+	margin: 40px 20px;
+	border-radius: 4px;
+	box-shadow: 1px 2px 2px rgba(0,0,0,.15);
+	position: relative;
+`
+
+const Line = styled.div`
+	background: #c75777;
+	height: 5px;
+	width: 75px;
+	margin: 0 0 20px 0;
 `
 
 const StyledHeading = styled.h4`
-	background: rgba(0,0,0,0.2);
-	border-radius: 0 0 8px 0;
-	padding: 10px 15px;
-	display: inline-block;
 	margin: 0;
-	font-size: 18px;
+	font-size: 28px;
+	font-family: ${styles.fonts.headings};
+	text-transform: uppercase;
+	line-height: 1;
+	color: #c75777;
 `
 
 const Copy = styled.p`
-	padding: 10px 20px 20px;
 	font-size: 18px;
 	line-height: 1.45;
 `
@@ -29,28 +39,29 @@ const Item = styled.div`
 	flex-flow: column;
 	padding: 20px;
 	border-radius: 8px;
-	background: rgba(255,255,255,.1);
+	border: 1px solid #d8e4ed;
 	box-sizing: border-box;
 	width: 33%;
-	margin: 0 0 20px 20px;
+	margin: 0 20px 20px 0;
 	font-size: 18px;
 	font-weight: bold;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	color: #666;
 
 	&:last-child {
-		margin-right: 20px;
+		margin-right: 0;
 	}
 
 	@media (max-width: 630px) {
-		margin: 0 20px 20px 20px;
+		margin: 0 0 20px 0;
 		width: auto;
 	}
 `
 
 const SocialName = styled.a`
-	color: #93bdff;
+	color: #c75777;
 	margin-top: 10px;
 	text-decoration: none;
 `
@@ -58,9 +69,11 @@ const SocialName = styled.a`
 
 const Email = styled.code`
 	border-radius: 8px;
-	background: rgba(255,255,255,.1);
+	background: #c75777;
 	white-space: nowrap;
+	color: #fff;
 	padding: 3px 8px;
+	font-family: ${styles.fonts.mono};
 `
 
 const FlexRow = styled.div`
@@ -74,6 +87,7 @@ const FlexRow = styled.div`
 
 const Social = () => (
 	<Wrapper>
+		<Line />
 		<StyledHeading>
 			Social Media
 		</StyledHeading>
