@@ -41,8 +41,39 @@ const BridgeLink = styled.a`
 	color: #2fa1d4;
 `
 
-const NitpickLink = styled.a`
-	color: #cb3837;
+const List = styled.ul`
+	list-style-type: none;
+	padding: 0;
+`
+
+const Item = styled.li`
+
+`
+
+const ItemTitle = styled.h3`
+	margin: 0;
+	padding: 0;
+	font-size: 21px
+	line-height: 1;
+
+	a {
+		color: #57b3c7;
+	}
+`
+
+const ItemText = styled.p`
+	padding: 0 0 0 10px;
+	font-size: 18px;
+`
+
+const Code = styled.pre`
+	padding: 20px;
+	margin: 0 10px 30px 10px;
+	background: #f9f9f9;
+	border-radius: 8px;
+	font-size: 18px;
+	background: #e7f0f5;
+	color: #114c59;
 `
 
 const Currently = () => (
@@ -52,14 +83,24 @@ const Currently = () => (
 			Currently Busy With
 		</StyledHeading>
 		<Copy>
-			I'm a front-end developer at <TulipLink href="https://tulip.com">Tulip</TulipLink> and getting ready to instruct at <BridgeLink href="http://bridgeschool.io/">Bridge</BridgeLink>.
-		</Copy>
-		<Copy>
-			I made an open source command line tool called Nitpick to show you what's missing in your JavaScript projects. You can find it at <NitpickLink href="https://www.npmjs.com/package/nitpick">npm/nitpick</NitpickLink>.
+			I'm a front-end developer at <TulipLink href="https://tulip.com">Tulip</TulipLink> and instructing the first Tulip cohort of <BridgeLink href="http://bridgeschool.io/">Bridge</BridgeLink>.
 		</Copy>
 		<Copy>
 			While I develop more tools to use with my own spare projects, I plan to keep each new tool open source, so keep an eye on my GitHub!
 		</Copy>
+		<List>
+			<Item>
+				<ItemTitle>🙈 <a href="https://github.com/cwlsn/nitpick">Nitpick</a></ItemTitle>
+				<ItemText>A command-line tool that harasses you about your bad project setup.</ItemText>
+				<Code>
+					npm i -g nitpick
+				</Code>
+			</Item>
+			<Item>
+				<ItemTitle>📅 <a href="https://github.com/cwlsn/ics-to-json">ics-to-json</a></ItemTitle>
+				<ItemText>Convert ICS calendars (eg. Google Calendar) to an opinionated JSON format.</ItemText>
+			</Item>
+		</List>
 	</Wrapper>
 )
 

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import styles from '../../config/styles'
 import face from './face.jpg'
+import label from './label.svg'
 
 const Wrapper = styled.header`
 	background: #fff;
@@ -69,6 +70,46 @@ const Copy = styled.p`
 	line-height: 28px;
 `
 
+const Tags = styled.ul`
+	list-style-type: none;
+	margin: 20px 0 0 0;
+	padding: 0;
+`
+
+const Tag = styled.li`
+	background: #43d76d url(${label}) no-repeat 10px 6px;
+	display: inline-block;
+	border-radius: 999px;
+	padding: 8px 14px 6px 38px;
+	color: #fff;
+	margin: 0 10px 10px 0;
+`
+
+const TagHeading = styled.h2`
+	font-family: ${styles.fonts.headings};
+	color: #43d76d;
+	font-size: 21px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 1;
+`
+
+const tags = [
+	'Modern JavaScript',
+	'TypeScript',
+	'React',
+	'MobX',
+	'i18next',
+	'Jest',
+	'ESLint',
+	'Prettier',
+	'Webpack',
+	'React Router',
+	'Babel 7'
+]
+
 const Header = () => (
 	<Wrapper>
 		<StyledFace src={face} />
@@ -86,6 +127,12 @@ const Header = () => (
 		<Copy>
 			Hi hello! I make modern web apps with the latest and coolest techonology. Along the way I've picked up some best practices for making these things and helping the people who make them.
 		</Copy>
+		<TagHeading>
+			Current Preferred Tech
+		</TagHeading>
+		<Tags>
+			{tags.map((tag) => <Tag key={tag}>{tag}</Tag>)}
+		</Tags>
 	</Wrapper>
 )
 
