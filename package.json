@@ -22,6 +22,7 @@
   },
   "homepage": "https://cwlsn.com",
   "jest": {
+  	"testURL": "http://localhost/",
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|svg|)$": "<rootDir>/src/test/fileMock.js"
     },
