@@ -27,6 +27,12 @@ const StyledHeading = styled.h3`
 	font-family: ${styles.fonts.headings};
 `
 
+const StyledSubHeading = styled(StyledHeading)`
+	font-size: 21px;
+	margin-bottom: 30px;
+	font-size: normal;
+`
+
 const Copy = styled.p`
 	color: #333;
 	font-size: 18px;
@@ -99,6 +105,15 @@ const Currently = () => (
 			<Item>
 				<ItemTitle>📅 <a href="https://github.com/cwlsn/ics-to-json">ics-to-json</a></ItemTitle>
 				<ItemText>Convert ICS calendars (eg. Google Calendar) to an opinionated JSON format.</ItemText>
+			</Item>
+		</List>
+		<StyledSubHeading>
+			Upcoming Events
+		</StyledSubHeading>
+		<List>
+			<Item>
+				<ItemTitle>⚛️ <a href="https://www.meetup.com/Devhub/events/253210361/">Atomic Design in React</a></ItemTitle>
+				<ItemText>I'm giving a quick talk about Atomic Design in React at DevhubTO on August 9th, 2018.</ItemText>
 			</Item>
 		</List>
 	</Wrapper>
