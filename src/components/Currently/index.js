@@ -108,12 +108,12 @@ const Currently = () => (
 			</Item>
 		</List>
 		<StyledSubHeading>
-			Upcoming Events
+			Past Talks
 		</StyledSubHeading>
 		<List>
 			<Item>
-				<ItemTitle>⚛️ <a href="https://www.meetup.com/Devhub/events/253210361/">Atomic Design in React</a></ItemTitle>
-				<ItemText>I'm giving a quick talk about Atomic Design in React at DevhubTO on August 9th, 2018.</ItemText>
+				<ItemTitle>⚛️ <a href="http://cwlsn.com/talks/Atomic%20Design%20in%20React.pdf">Atomic Design in React</a></ItemTitle>
+				<ItemText>A quick talk about Atomic Design in React at DevhubTO on August 9th, 2018.</ItemText>
 			</Item>
 		</List>
 	</Wrapper>
